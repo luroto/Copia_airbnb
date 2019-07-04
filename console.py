@@ -47,8 +47,8 @@ class HBNBCommand(cmd.Cmd):
         Usage: create <class name>
 
         """
-        arg = args.split(" ")
-        if len(arg) < 1:
+        arg = args.split()
+        if len(arg) == 0:
             print("** class name missing **")
         elif not arg[0] in posi:
             print("** class doesn't exist **")

@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" This module tests all about Amenity"""
 from models.amenity import Amenity
 import unittest
 import os

@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" This module tests all about State"""
 from models.state import State
 import unittest
 import os

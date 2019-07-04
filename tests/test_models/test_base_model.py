@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""This module checks all about BaseModel """
 from models.base_model import BaseModel
 import unittest
 import os

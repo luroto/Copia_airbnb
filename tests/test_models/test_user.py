@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""This module tests all about User """
 from models.user import User
 import unittest
 import os
