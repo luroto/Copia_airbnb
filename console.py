@@ -89,8 +89,8 @@ class HBNBCommand(cmd.Cmd):
             print("** class name missing **")
         elif not arg[0] in posi:
             print("** class doesn't exist **")
-        elif len(arg) != 2:
-            print("** no instance found **")
+        elif len(arg) == 1:
+            print("** instance id missing **")
         else:
             key = str(arg[0]) + "." + str(arg[1])
             if key in content:
@@ -132,10 +132,10 @@ class HBNBCommand(cmd.Cmd):
         intfields = ["my_number", "number_rooms", "number_bathrooms",
                      "max_guest", "price_by_night"]
         floatfields = ["latitude", "longitude"]
-        if len(arg) == 0:
+        if len(arg) == 1 and arg[0] == "":
             print("** class name missing **")
             return
-        if not arg[0] in posi:
+        if arg[0] not in posi:
             print("** class doesn't exist **")
             return
         elif len(arg) == 1:
